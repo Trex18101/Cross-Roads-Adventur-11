@@ -1,22 +1,22 @@
 import sys, os, time
 
-def slow_print(text):
+def slow_print(text, delay=0.01):
 	'''
  	Simulates typewriting
   	'''
 	for char in text + '\n':
 		sys.stdout.write(char)
 		sys.stdout.flush()
-		time.sleep(0.5)
+		time.sleep(delay)
 
-def slow_input(text):
+def slow_input(text, delay=0.01):
 	'''
  	Simulates typewriting input
   	'''
 	for char in text + '\n':
 		sys.stdout.write(char)
 		sys.stdout.flush()
-		time.sleep(0.1)
+		time.sleep(delay)
 
 	input()
 
